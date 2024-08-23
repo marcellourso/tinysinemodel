@@ -1,0 +1,20 @@
+LMSTUDIO aprile 2024
+https://www.youtube.com/watch?v=4fdZwKg9IbU 
+
+introduzione ai su stm32 con cubeMX.ai nozioni generali
+https://www.youtube.com/watch?v=yuLNWKxzn3M&list=PLnMKNibPkDnEOUdTXlDH7yWN6qyxXPsEb
+
+getting started stm32cube.AI progetto guidato in cortex M7 per un target VALIDATION in EWARM toolchain
+https://www.youtube.com/watch?v=grgNXdkmzzQ
+
+Pagina di ST microelectronics su installazione di stm32cubeMX.AI  che rimanda a manuale di base
+https://community.st.com/t5/stm32-mcus/how-to-install-x-cube-ai-through-stm32cubemx/ta-p/585776
+
+make tiny model for stm32 and upload con stm32 cube ide application
+https://www.youtube.com/watch?v=UCuTNdpNebg&t=42s
+
+come sopra dall ORIGINALE sui tiny ML 
+https://www.youtube.com/watch?v=crJcDqIUbP4
+
+install tensorflowRT and cuda
+https://www.tensorflow.org/install/pip
