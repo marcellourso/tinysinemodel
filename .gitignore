@@ -1,0 +1,5 @@
+# ignora le cartelle
+gguf_gui/
+.tinymodels/
+
+
