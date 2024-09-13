@@ -13,8 +13,11 @@ https://community.st.com/t5/stm32-mcus/how-to-install-x-cube-ai-through-stm32cub
 make tiny model for stm32 and upload con stm32 cube ide application
 https://www.youtube.com/watch?v=UCuTNdpNebg&t=42s
 
-come sopra dall ORIGINALE sui tiny ML 
+progetto github relativo a sopra
+https://github.com/ireshjayawardana/tflite_SineWave_CUBEai
+
+video originale dei contenuti sopra ORIGINALE sui tiny ML 
 https://www.youtube.com/watch?v=crJcDqIUbP4
 
-install tensorflowRT and cuda
+installare tensorflowRT and cuda
 https://www.tensorflow.org/install/pip

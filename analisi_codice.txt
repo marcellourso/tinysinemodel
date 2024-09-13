@@ -1,0 +1,31 @@
+// handle della rete neurale
+ai_handle network = AI_HANDLE_NULL;
+
+// variabili per le attivazioni intermedie
+ai_u8 activations[AI_SINE_MODEL_DATA_ACTIVATIONS_SIZE];
+ai_u8 weithtsNew[AI_SINE_MODEL_DATA_WEIGHTS_SIZE];
+
+// dati di input e di output per l'inferenza
+ai_buffer *ai_input;
+ai_buffer *ai_output;
+
+// inizializza dati per l'inferenza al valore del report che contiene tutti i parametri
+ai_input = &report.inputs[0];
+ai_output = &report.outputs[0];
+
+//collega i dati di input e di output ai dati compresi dal motore stm32 di AI
+ai_input[0].data = AI_HANDLE_PTR(in_data);
+ai_output[0].data = AI_HANDLE_PTR(out_data);
+
+// stabiliamo il numero di batch, di solito 1
+ai_i32 nbatch;
+
+// i dati utente (float) vengono allineati ai dati di ingresso del modello (chunk di 4 byte)
+for (uint32_t i = 0; i < AI_SINE_MODEL_IN_1_SIZE; i++)
+          			  {
+          				((ai_float *)in_data)[i] = (ai_float)x;
+          			  }
+
+// il run avviene dopo l'allinemanto ai_input ai valori di addestramento (in_data)
+nbatch = ai_sine_model_run(network, &ai_input[0], &ai_output[0]);
+
