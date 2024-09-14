@@ -1,3 +1,5 @@
+# creazione di dataset train e validation per una previsione della funzione seno
+
 import numpy as np
 import pandas as pd
 import math
